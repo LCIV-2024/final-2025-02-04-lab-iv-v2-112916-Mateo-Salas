@@ -9,6 +9,7 @@ import ar.edu.utn.frc.tup.lciii.services.DeviceService;
 import ar.edu.utn.frc.tup.lciii.services.TelemetryService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 
@@ -18,6 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
+@SpringBootTest
 class TelemetryServiceImplTest {
     @MockBean
     private TelemetryRepository telemetryRepository;
